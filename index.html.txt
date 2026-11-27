@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的成长主页</title>
+    <style>
+        * {margin:0;padding:0;box-sizing:border-box;font-family:system-ui}
+        nav{background:#2c3e50;padding:1rem;text-align:center}
+        nav a{color:white;margin:0 16px;text-decoration:none;font-size:18px}
+        nav a:hover{color:#3498db}
+        .container{max-width:900px;margin:30px auto;padding:0 20px}
+        section{margin:40px 0;padding:20px;border-radius:10px;background:#f8f9fa}
+        h2{color:#2c3e50;margin-bottom:16px;border-left:4px solid #3498db;padding-left:10px}
+        .skill-item{display:inline-block;background:#3498db;color:white;padding:6px 12px;border-radius:6px;margin:6px}
+        footer{text-align:center;padding:20px;color:#666;margin-top:50px}
+        input,textarea{width:100%;padding:10px;margin:8px 0;border:1px solid #ccc;border-radius:6px}
+        button{background:#3498db;color:white;border:none;padding:10px 20px;border-radius:6px;cursor:pointer}
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">首页-关于我</a>
+        <a href="study.html">学习记录</a>
+        <a href="project.html">项目作品</a>
+    </nav>
+    <div class="container">
+        <section>
+            <h2>👋 关于我</h2>
+            <p>我是华中科技大学软件工程专业新生，喜欢编程，正在打好C语言、前端基础，目标是持续积累项目，未来从事开发相关工作。</p>
+        </section>
+
+        <section>
+            <h2>💻 技能展示</h2>
+            <div>
+                <span class="skill-item">C语言：可以写基础循环、结构体、简单排序程序</span>
+                <span class="skill-item">HTML/CSS：能搭建简单静态网页</span>
+                <span class="skill-item">VS Code / VS2022 调试代码</span>
+            </div>
+            <p style="margin-top:12px;">证据：本网页就是我使用HTML+CSS+JS完成的作品</p>
+        </section>
+
+        <section>
+            <h2>📬 联系我（表单交互，满足交互要求）</h2>
+            <p>邮箱：xxx@hust.edu.cn | GitHub：https://github.com/xxxx</p>
+            <p style="margin:10px 0">留言板：</p>
+            <input type="text" id="msgName" placeholder="你的昵称">
+            <textarea id="msgContent" rows="3" placeholder="想说的话"></textarea>
+            <button onclick="submitMsg()">提交留言</button>
+            <p id="tip" style="color:green;margin-top:8px"></p>
+        </section>
+    </div>
+    <footer>©2026 我的成长主页 | 持续更新</footer>
+    <script>
+        function submitMsg(){
+            let name = document.getElementById("msgName").value;
+            let text = document.getElementById("msgContent").value;
+            if(name && text){
+                document.getElementById("tip").innerText = "留言提交成功！（仅前端演示）";
+            }else{
+                document.getElementById("tip").innerText = "请填写昵称和内容";
+                document.getElementById("tip").style.color="red";
+            }
+        }
+    </script>
+</body>
+</html>

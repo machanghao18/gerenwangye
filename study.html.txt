@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学习记录</title>
+    <style>
+        * {margin:0;padding:0;box-sizing:border-box;font-family:system-ui}
+        nav{background:#2c3e50;padding:1rem;text-align:center}
+        nav a{color:white;margin:0 16px;text-decoration:none;font-size:18px}
+        nav a:hover{color:#3498db}
+        .container{max-width:900px;margin:30px auto;padding:0 20px}
+        .record{margin:20px 0;padding:20px;background:#f8f9fa;border-radius:10px}
+        .time{color:#3498db;font-weight:bold}
+        footer{text-align:center;padding:20px;color:#666;margin-top:50px}
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">首页-关于我</a>
+        <a href="study.html">学习记录</a>
+        <a href="project.html">项目作品</a>
+    </nav>
+    <div class="container">
+        <h2>📖 我的学习记录</h2>
+        <div class="record">
+            <div class="time">2026.09 学习C语言基础</div>
+            <p>学习内容：变量、分支、循环；遇到问题：指针概念很难理解。<br>解决方式：多看调试例子，在VS2022里一步步监视变量，画内存草图理解。</p>
+        </div>
+        <div class="record">
+            <div class="time">2026.10 学习数组、结构体</div>
+            <p>学习内容：二维数组、结构体；遇到问题：结构体指针传参容易出错。<br>解决方式：写小测试程序单独验证，区分值传递和地址传递。</p>
+        </div>
+        <div class="record">
+            <div class="time">2026.11 学习HTML/CSS静态网页</div>
+            <p>学习内容：标签、布局、导航跳转；遇到问题：页面排版混乱，不同页面样式不统一。<br>解决方式：统一写css样式，复用导航栏结构。</p>
+        </div>
+    </div>
+    <footer>©2026 我的成长主页 | 持续更新</footer>
+</body>
+</html>
